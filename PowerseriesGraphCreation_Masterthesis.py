@@ -22,14 +22,12 @@ matplotlib.rcParams['axes.linewidth'] = 1
 
 # -- data folder path --
 data_path = "<path of sample data>" + "/" # enter path of sample data
-k_value = "k-0p540"
-filename_width = "peakFitResults_width_series1_" + k_value + "_peak1.txt"
-filename_height = "peakFitResults_height_series1_" + k_value + "_peak1.txt"
-filename_position = "peakFitResults_position_series1_" + k_value + "_peak1.txt"
-split_data_path = data_path.split("/")
+filename_width = "linewidth_data.txt" # this is the name of the sample data file
+filename_height = "intensity_data.txt" # this is the name of the sample data file
+filename_position = "position_data.txt" # this is the name of the sample data file
 
 #%% ------ choose x-axis setting and save option ------ 
-saveFigure = False
+saveFigure = True
 xAxis_P_Pth = False
 P_th = 5.62 # threshold power
 
@@ -135,22 +133,24 @@ ax1.xaxis.set_major_formatter(FormatStrFormatter('%.1f'))
 
 fig.tight_layout()
 
+#fig.savefig('test.png')
+
 # plt.show()
 
 # -- safe files and create txt file with the resulting data used for the plots -- 
 if xAxis_P_Pth:
     powerTitle = 'P/Pth'
-    filename = "Results_P_Pth.txt"
+    filename = "Results_P_Pth"
 else:
     powerTitle = 'Power (mW)'
-    filename = "Results.txt"
+    filename = "Results"
 
 if saveFigure: 
     # save plot
-    plt.savefig(data_path + filename, format='png', bbox_inches='tight', dpi=1000)
+    fig.savefig(data_path + filename + ".png", bbox_inches='tight', dpi=1000)
     
     # Create file 
-    file = open(data_path + filename, "w+")
+    file = open(data_path + filename + ".txt", "w+")
     
     # Saving the array in a text file
     file.write(powerTitle + ' , Energyshift (meV), Linewidth (meV), PL Intensity (a. u.) \n')
