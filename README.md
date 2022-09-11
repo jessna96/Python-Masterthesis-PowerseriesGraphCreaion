@@ -2,7 +2,9 @@
 Python script for the creation of a power series graph for the analysis of angular resolved spectroscopy measurement data.
 
 ## Description
-
+The script creates a plot with the photoluminescence intensity, linewith and energy shift as a function of the excitation power. 
+The sample data shows the necessary structure of the input data. Each row corresponds to a data point with the value of the excitation power, a comma
+and the value of the intensity (arb. u.), linewith (eV) and energetic position (eV). 
 
 ## Example graph
 
