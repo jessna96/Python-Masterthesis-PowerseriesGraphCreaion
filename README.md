@@ -15,6 +15,10 @@ and the value of the intensity (arb. u.), linewith (eV) and energetic position (
 The following components must be installed locally:
 
 - [python](https://www.python.org/downloads/) v3.9.7
+- matplotlib, for example by typing:
+```console
+$ python -m pip install matplotlib
+```
 
 To run the project with the sample files locally, first change the path to where the python script is located in line 24:
 
