@@ -24,7 +24,7 @@ To run the project with the sample files locally, first change the path to where
 
 <img width="520" alt="image" src="https://user-images.githubusercontent.com/35634254/189532535-40b70686-c6a0-4e28-bdb3-223a7ed605ed.png">
 
-(in case of Windows also change / to \\\, for macOS just leave it like this)
+(in case of Windows also change / to \\ \\, for macOS just leave it like this)
 
 and then enter the following in Commandline / Bash:
 
