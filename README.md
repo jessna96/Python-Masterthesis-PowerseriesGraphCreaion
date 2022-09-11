@@ -22,7 +22,7 @@ $ python -m pip install matplotlib
 
 To run the project with the sample files locally, first change the path to where the python script is located in line 24:
 
-<img width="520" alt="image" src="https://user-images.githubusercontent.com/35634254/189532535-40b70686-c6a0-4e28-bdb3-223a7ed605ed.png">
+<img width="521" alt="image" src="https://user-images.githubusercontent.com/35634254/189535415-68795e53-9922-4bd4-b37a-c0afde7fc42b.png">
 
 (in case of Windows also change / to \\ \\, for macOS just leave it like this)
 
